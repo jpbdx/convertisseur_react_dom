@@ -1,0 +1,11 @@
+export type ConversionValue = {
+  from: number;
+  to: number;
+  unitFrom: string;
+  unitTo: string;
+};
+
+export interface ConverterProps {
+  initialValue: ConversionValue;
+  onConvert: (value: ConversionValue) => void;
+}
